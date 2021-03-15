@@ -1,3 +1,6 @@
-/Lib
-/Include
-/Scripts
+/Lib/*
+Lib/*
+/Include/*
+Include/*
+/Scripts/*
+Scripts/*
