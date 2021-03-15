@@ -1,0 +1,4 @@
+If you want to include module 'requests' you should set parameter in file 'pyvenv.cfg':
+include-system-site-packages = true
+
+Otherwise you would receive exception: ModuleNotFoundError: No module named 'requests'
