@@ -4,3 +4,10 @@ Lib/*
 Include/*
 /Scripts/*
 Scripts/*
+/__pycache__/*
+__pycache__/*
+
+pyvenv.cfg
+test_pickle.py
+frun.bat
+test.py

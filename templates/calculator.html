@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    {% block head %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Kalkulator walutowy</title>
     <link href="{{url_for('static', filename='style.css') }}" rel="stylesheet" />
+    {% endblock %}
   </head>
   <body>
     <div>
@@ -13,8 +15,7 @@
       <form method="post" action="/calc/">
         <label for="code">Wybierz walutę:</label>
         <select name="code" id="code">
-          <option value="None"></option>
-          {% for code, description in currency_code %}
+            {% for code, description in currency_code %}
             <option value="{{code}}">{{description}}</option>
           {% endfor %}
         </select>
@@ -26,5 +27,6 @@
         <input type="submit" /><br>
       </form>
     </div>
+    <div id="content">{% block content %}{% endblock %}</div>
   </body>
 </html>
