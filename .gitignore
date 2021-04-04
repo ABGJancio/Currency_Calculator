@@ -3,6 +3,7 @@ __pycache__
 test_pickle.py
 frun.bat
 test.py
+requirements_my.txt
 
 # Created by https://www.toptal.com/developers/gitignore/api/venv
 # Edit at https://www.toptal.com/developers/gitignore?templates=venv
@@ -22,5 +23,3 @@ pyvenv.cfg
 pip-selfcheck.json
 
 # End of https://www.toptal.com/developers/gitignore/api/venv
-
-New_One
