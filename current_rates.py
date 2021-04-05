@@ -2,7 +2,7 @@ import requests
 import csv
 
 
-def rates_list():
+def get_rates_list():
     """Get actual 'bid' and 'ask' rates for currencies from NBP API."""
     response = requests.get(
         "http://api.nbp.pl/api/exchangerates/tables/C?format=json")
@@ -15,7 +15,7 @@ def rates_list():
 
 def export_rates_to_csv():
     """Export database for currency rates to .csv file."""
-    rates_list()
+    get_rates_list()
     with open('current_rates.csv', 'w', newline='') as csvfile:
         rates_writer = csv.writer(
             csvfile, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
