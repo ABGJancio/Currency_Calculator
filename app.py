@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-rates = current_rates.rates_list()
+rates = current_rates.get_rates_list()
 currency_code = [[i[1], i[0]] for i in rates]
 
 
